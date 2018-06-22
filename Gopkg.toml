@@ -24,7 +24,9 @@
 #   go-tests = true
 #   unused-packages = true
 
-
+[metadata.heroku]
+  root-package = "blocked_wenprr"
+  
 [prune]
   go-tests = true
   unused-packages = true
