@@ -12,7 +12,7 @@ import (
 func main() {
 	b, err := tb.NewBot(tb.Settings{
 		Token:  os.Getenv("token"),
-		Poller: &tb.LongPoller{Timeout: 10 * time.Second},
+		Poller: &tb.LongPoller{Timeout: 5 * time.Second},
 	})
 
 	if err != nil {
