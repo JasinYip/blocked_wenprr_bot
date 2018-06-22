@@ -26,19 +26,19 @@ func main() {
 		if strings.Contains(user.FirstName, "wenprr") || strings.Contains(user.LastName, "wenprr") {
 			member, err := b.ChatMemberOf(m.Chat, user)
 			if err != nil {
-				log.Println("chat member error ", err)
+				log.Println("chat member error", err)
 				return
 			}
 			if err = b.Delete(m); err != nil {
-				log.Println("delete error ", err)
+				log.Println("delete error", err)
 				return
 			}
 			if err = b.Ban(m.Chat, member); err != nil {
-				log.Println("ban error ", err)
+				log.Println("ban error", err)
 				return
 			}
 
-			log.Println("success")
+			log.Println("success ban user")
 		}
 	})
 	b.Start()
