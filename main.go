@@ -55,7 +55,7 @@ func main() {
 				if m1.ReplyTo.UserLeft.ID == user.ID {
 					b.Delete(m1)         // delete remove service message
 					b.Delete(m1.ReplyTo) // delete reply message
-					return
+					break
 				}
 			}
 
