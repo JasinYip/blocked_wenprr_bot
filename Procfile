@@ -1,1 +1,1 @@
-worker: /app/bin/blocked-wenprr-bot
+worker: /app/bin/blocked_wenprr
