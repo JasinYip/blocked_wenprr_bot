@@ -37,6 +37,7 @@ func main() {
 			}
 
 			// del xx remove xx service message
+			// https://stackoverflow.com/questions/50916967/trying-to-delete-left-chat-member-messages-with-a-telegram-bot/50940561
 			id3Message, err := b.Send(m.Chat, "Member kicked")
 			b.Delete(id3Message)
 			if err != nil {
